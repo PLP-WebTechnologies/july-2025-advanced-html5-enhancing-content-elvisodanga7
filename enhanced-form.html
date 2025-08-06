@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+    form {
+      background-color: #fff;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    section {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>User Registration Portal</h1>
+    <p>Complete the form below to register</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to Our Service</h2>
+      <p>Here’s what we offer:</p>
+      <ul>
+        <li>24/7 customer support</li>
+        <li>High-speed connectivity</li>
+        <li>Affordable pricing</li>
+      </ul>
+
+      <h3>Our Plans</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Speed</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>10 Mbps</td>
+            <td>$10/month</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>50 Mbps</td>
+            <td>$25/month</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>100 Mbps</td>
+            <td>$45/month</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Watch Our Intro</h3>
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"/>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required/>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required/>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female"/>
+        <label for="female">Female</label>
+
+        <label for="plan">Choose Your Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">--Select a Plan--</option>
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required/>
+
+        <label for="referral">Referral Code:</label>
+        <input type="text" id="referral" name="referral" value="INVITED2025" readonly/>
+
+        <label for="feedback">Any Comments?</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Your thoughts..."></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions
+        </label>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 YourCompany. All rights reserved.</p>
+  </footer>
+</body>
+</html>
